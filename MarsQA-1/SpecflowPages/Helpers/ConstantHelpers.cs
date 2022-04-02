@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Security.Permissions;
 
 namespace MarsQA_1.Helpers
 {
@@ -12,12 +13,14 @@ namespace MarsQA_1.Helpers
         public static string Url = "http://localhost:5000";
 
         //ScreenshotPath
-        public static string ScreenshotPath = "";
+        public static string ScreenshotPath = @"C:\Users\Nancy\Desktop\New folder\MarsQA-1\TestReports\1" ;
 
         //ExtentReportsPath
-        public static string ReportsPath = "";
+        public static string ReportsPath = @"C:\Users\Nancy\Desktop\New folder\MarsQA-1\TestReports\1"  ;
 
         //ReportXML Path
-        public static string ReportXMLPath = "";
+        public static string ReportXMLPath = @"C:\Users\Nancy\Desktop\New folder\MarsQA-1\TestReports\1" ;
+
+
     }
 }

@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace MarsQA_1.Helpers
@@ -15,9 +16,14 @@ namespace MarsQA_1.Helpers
 
         public void Initialize()
         {
+            var options = new OpenQA.Selenium.Chrome.ChromeOptions(); 
+            options.BinaryLocation = @"C:\Program Files\Google\Chrome\Application\chrome.exe";
+            using (IWebDriver driver = new OpenQA.Selenium.Chrome.ChromeDriver(options))
+
+
             //Defining the browser
-            driver = new ChromeDriver();
-            TurnOnWait();
+           // driver = new ChromeDriver();
+             Driver.TurnOnWait();
 
             //Maximise the window
             driver.Manage().Window.Maximize();
@@ -40,6 +46,7 @@ namespace MarsQA_1.Helpers
         {
             driver.Navigate().GoToUrl(BaseUrl);
         }
+
 
         //Close the browser
         public void Close()

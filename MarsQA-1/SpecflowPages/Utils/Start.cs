@@ -14,6 +14,18 @@ namespace MarsQA_1.Utils
     [Binding]
     public class Start : Driver
     {
+        [BeforeTestRun]
+        public static void BeforeTestRun()
+        {
+            ExtentReports();
+        }
+
+        [BeforeFeature]
+        public static void BeforeFeature(FeatureContext context)
+        {
+            test = Extent.StartTest(context.FeatureInfo.Title);
+        }
+
         [BeforeScenario]
         public void Setup()
         {

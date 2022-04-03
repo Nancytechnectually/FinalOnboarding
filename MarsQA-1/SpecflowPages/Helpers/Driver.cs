@@ -14,16 +14,16 @@ namespace MarsQA_1.Helpers
         //Initialize the browser
         public static IWebDriver driver { get; set; }
 
-        public void Initialize()
+        public  void Initialize()
         {
-            var options = new OpenQA.Selenium.Chrome.ChromeOptions(); 
-            options.BinaryLocation = @"C:\Program Files\Google\Chrome\Application\chrome.exe";
-            using (IWebDriver driver = new OpenQA.Selenium.Chrome.ChromeDriver(options))
+            //var options = new OpenQA.Selenium.Chrome.ChromeOptions(); 
+            //options.BinaryLocation = @"C:\Program Files\Google\Chrome\Application\chrome.exe";
+           // using (IWebDriver driver = new OpenQA.Selenium.Chrome.ChromeDriver(options))
 
 
             //Defining the browser
-           // driver = new ChromeDriver();
-             Driver.TurnOnWait();
+           driver = new ChromeDriver();
+               TurnOnWait();
 
             //Maximise the window
             driver.Manage().Window.Maximize();

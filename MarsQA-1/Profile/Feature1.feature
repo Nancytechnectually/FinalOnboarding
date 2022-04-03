@@ -13,11 +13,11 @@ Scenario: TC_2_Check Check if the seller is able to see description in his profi
 
 	Given I am on Profile page 
 	When I check the Seller description Field 
-	Then Actual Description is same as expected description
+	Then  Description is visible 
 
 
 @tag1
 Scenario: TC_3_Update Check if the seller is able to Update description in his profile.
 	Given I am on Profile page 
 	When  I Click on Edit description icon  
-	Then Actual Description is same as expected description
+	Then updated Description is same as expected description

@@ -12,7 +12,7 @@ namespace MarsQA_1
     [Binding]
     public class Feature1StepDefinitions : Driver
     {
-
+        
 
         [Given(@"I am on Profile page")]
         public void GivenIAmOnProfilePage()
@@ -32,6 +32,9 @@ namespace MarsQA_1
         public void WhenIAddADescription()
         {
             // To click on add description icon 
+
+            Wait.ClickableElement(driver, "CssSelector", "#account-profile-section > div > section:nth-child(3) > div > div > div > div.eight.wide.column > div > div > div > h3 > span", 10);
+
             IWebElement addDescription = driver.FindElement(By.CssSelector("#account-profile-section > div > section:nth-child(3) > div > div > div > div.eight.wide.column > div > div > div > h3 > span"));
             addDescription.Click();
 
@@ -101,6 +104,8 @@ namespace MarsQA_1
 
 
             //To add description click on edit description icon
+            Wait.ClickableElement(driver, "CssSelector", "#account-profile-section > div > section:nth-child(3) > div > div > div > div.eight.wide.column > div > div > div > h3 > span", 10);
+
             IWebElement addDescription = driver.FindElement(By.CssSelector("#account-profile-section > div > section:nth-child(3) > div > div > div > div.eight.wide.column > div > div > div > h3 > span"));
             addDescription.Click();
 

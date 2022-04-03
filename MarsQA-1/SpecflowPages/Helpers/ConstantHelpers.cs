@@ -16,7 +16,7 @@ namespace MarsQA_1.Helpers
         public static string ScreenshotPath = @"C:\Users\Nancy\Desktop\New folder\MarsQA-1\TestReports\Screenshots";
 
         //ExtentReportsPath
-        public static string ReportsPath = @"C:\Users\Nancy\Desktop\New folder\MarsQA-1\TestReports\Screenshots\1"+"Report"+DateTime.Now.ToString("_dd-mm-yyyy_mss")+ ".jpeg";
+        public static string ReportsPath = @"C:\Users\Nancy\Desktop\New folder\MarsQA-1\TestReports\Screenshots\1"+"Report"+DateTime.Now.ToString("_dd-mm-yyyy_mss")+ ".html";
 
         //ReportXML Path
         public static string ReportXMLPath = @"C:\Users\Nancy\Desktop\New folder\MarsQA-1\TestReports\Screenshots\1" + DateTime.Now.ToString("_dd-mm-yyyy_mss") + ".xml";

@@ -1,6 +1,7 @@
 ﻿Feature: Feature1
 
-A short summary of the feature
+
+A Seller is able to ADD and SEE the seller details/description on profile page.
 
 @tag1
 Scenario: TC_1_Create Check if the seller is able to Create description in his profile.

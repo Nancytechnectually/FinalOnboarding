@@ -42,6 +42,7 @@ namespace MarsQA_1.Helpers
 
         }
 
+
         public static void NavigateUrl()
         {
             driver.Navigate().GoToUrl(BaseUrl);
@@ -53,6 +54,8 @@ namespace MarsQA_1.Helpers
         {
             driver.Quit();
         }
+      
 
+       
     }
 }

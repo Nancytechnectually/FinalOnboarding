@@ -165,6 +165,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Profile\Feature2SkillsStepDefinitions.cs" />
+    <Compile Include="Profile\Feature2LanguageStepDefinitions.cs" />
     <Compile Include="Profile\Feature1StepDefinitions.cs" />
     <Compile Include="SpecflowPages\Helpers\CommonMethods.cs" />
     <Compile Include="SpecflowPages\Helpers\ConstantHelpers.cs" />
@@ -178,6 +180,8 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Profile\Feature1.feature" />
+    <None Include="Profile\Feature2Language.feature" />
+    <None Include="Profile\Feature2Skills.feature" />
     <None Include="SpecflowTests\Data\Data.xlsx" />
     <None Include="packages.config" />
     <None Include="SpecflowTests\Data\Mars.xlsx" />

@@ -44,8 +44,30 @@ namespace MarsQA_1.SpecflowPages.Helpers
                 Wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector(locatorValue)));
 
             }
-
         }
 
-    }
+
+            public static void NotClickableElement(IWebDriver driver, String locator, String locatorValue, int seconds)
+            {
+                var Wait = new WebDriverWait(driver, new TimeSpan(0, 0, seconds));
+
+                if (locator == "XPath")
+                {
+
+                    Wait.Until(ExpectedConditions.InvisibilityOfElementLocated(By.XPath(locatorValue)));
+                }
+                else if (locator == "Cssselector")
+                {
+                    Wait.Until(ExpectedConditions.InvisibilityOfElementLocated(By.CssSelector(locatorValue)));
+
+                }
+
+       
+            }   
+        
+     }
+
+
+
 }
+

@@ -16,7 +16,7 @@ Scenario Outline: TC_1_Create_005	Check if the seller is able to Create Skills i
 Given I am on Profile page
 And I Click on Skills Tab
 When I Create a new  Skill "<Skill>" at "<Level>"
-Then  Check New Skill"<Skill>" at "<Level>" has been added
+Then  Check New Skill  has been added
 
 
 Examples: 

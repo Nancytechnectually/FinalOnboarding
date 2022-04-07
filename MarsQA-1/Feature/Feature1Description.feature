@@ -1,4 +1,4 @@
-﻿Feature: Feature1
+﻿Feature: Feature1Description
 
 
 A Seller is able to ADD and SEE the seller details/description on profile page.

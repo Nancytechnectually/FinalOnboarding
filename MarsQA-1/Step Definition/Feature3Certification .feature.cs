@@ -20,28 +20,28 @@ namespace MarsQA_1.Profile
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Feature2Skills")]
-    public partial class Feature2SkillsFeature
+    [NUnit.Framework.DescriptionAttribute("Feature3Certification")]
+    public partial class Feature3CertificationFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "Feature2Skills.feature"
+#line 1 "Feature3Certification .feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Feature2Skills", @"Check if seller is able to do CRUD operations on Seller Add Skill feature 
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Feature3Certification", @"Check if seller is able to do CRUD operations on Seller Add Certification feature 
 
-(Because Skill can not be added twice ,
+(Because Certification can not be added twice ,
 make sure it is not already added before 
 running a ""create"" test case. )
 
-(a Skill must be added before running 
+(a Certification must be added before running 
 ""update"" or ""delete"" Test case)", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
@@ -81,12 +81,12 @@ running a ""create"" test case. )
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TC_1_Create_005\tCheck if the seller is able to Create Skills in his profile.")]
+        [NUnit.Framework.DescriptionAttribute("TC_1_Create_005\tCheck if the seller is able to Create Certification in his profil" +
+            "e.")]
         [NUnit.Framework.CategoryAttribute("tag1")]
-        [NUnit.Framework.TestCaseAttribute("Skill1", "Beginner", null)]
-        [NUnit.Framework.TestCaseAttribute("Skill2", "Intermediate", null)]
-        [NUnit.Framework.TestCaseAttribute("Skill3", "Expert", null)]
-        public virtual void TC_1_Create_005CheckIfTheSellerIsAbleToCreateSkillsInHisProfile_(string skill, string level, string[] exampleTags)
+        [NUnit.Framework.TestCaseAttribute("abc1", null)]
+        [NUnit.Framework.TestCaseAttribute("abc2", null)]
+        public virtual void TC_1_Create_005CheckIfTheSellerIsAbleToCreateCertificationInHisProfile_(string certification, string[] exampleTags)
         {
             string[] @__tags = new string[] {
                     "tag1"};
@@ -95,8 +95,9 @@ running a ""create"" test case. )
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
             }
             string[] tagsOfScenario = @__tags;
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC_1_Create_005\tCheck if the seller is able to Create Skills in his profile.", null, @__tags);
-#line 14
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC_1_Create_005\tCheck if the seller is able to Create Certification in his profil" +
+                    "e.", null, @__tags);
+#line 15
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -116,32 +117,32 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 16
-testRunner.Given("I am on Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
 #line 17
-testRunner.And("I Click on Skills Tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.Given("I am on Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 18
-testRunner.When(string.Format("I Create a new  Skill \"{0}\" at \"{1}\"", skill, level), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.And("I Click on Certification Tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 19
-testRunner.Then(string.Format("Check New Skill\"{0}\" at \"{1}\" has been added", skill, level), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+testRunner.When(string.Format("I Create a new  Certification \"{0}\"", certification), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 20
+testRunner.Then("Check New Certification  has been added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TC_2_Check_005\tCheck if the seller is able to Read Skills in his profile.")]
+        [NUnit.Framework.DescriptionAttribute("TC_2_Check_005\tCheck if the seller is able to Read Certification in his profile.")]
         [NUnit.Framework.CategoryAttribute("tag1")]
-        public virtual void TC_2_Check_005CheckIfTheSellerIsAbleToReadSkillsInHisProfile_()
+        public virtual void TC_2_Check_005CheckIfTheSellerIsAbleToReadCertificationInHisProfile_()
         {
             string[] tagsOfScenario = new string[] {
                     "tag1"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC_2_Check_005\tCheck if the seller is able to Read Skills in his profile.", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC_2_Check_005\tCheck if the seller is able to Read Certification in his profile.", null, new string[] {
                         "tag1"});
-#line 29
+#line 31
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -161,34 +162,34 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 30
-testRunner.Given("I am on Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 31
-testRunner.And("I Click on Skills Tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
 #line 32
-testRunner.When("I check the Skills Seller is offering", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.Given("I am on Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 33
-testRunner.Then("Skills are visible on Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+testRunner.And("I Click on Certification Tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 34
+testRunner.When("I check the Certification Seller is offering", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 35
+testRunner.Then("Certification are visible on Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TC_3_Update_005(Add new Skill for each update Test Or delete previous one )  Upda" +
-            "te Skills in his profile.")]
+        [NUnit.Framework.DescriptionAttribute("TC_3_Update_005(Add new Certification for each update Test Or delete previous one" +
+            " )  Update Certification in his profile.")]
         [NUnit.Framework.CategoryAttribute("tag1")]
-        public virtual void TC_3_Update_005AddNewSkillForEachUpdateTestOrDeletePreviousOneUpdateSkillsInHisProfile_()
+        public virtual void TC_3_Update_005AddNewCertificationForEachUpdateTestOrDeletePreviousOneUpdateCertificationInHisProfile_()
         {
             string[] tagsOfScenario = new string[] {
                     "tag1"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC_3_Update_005(Add new Skill for each update Test Or delete previous one )  Upda" +
-                    "te Skills in his profile.", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC_3_Update_005(Add new Certification for each update Test Or delete previous one" +
+                    " )  Update Certification in his profile.", null, new string[] {
                         "tag1"});
-#line 37
+#line 39
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -208,32 +209,34 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 39
-testRunner.Given("I am on Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 40
-testRunner.And("I Click on Skills Tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
 #line 41
-testRunner.When("I Update  Skills Seller is offering", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.Given("I am on Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 42
-testRunner.Then("Check   Skills has been updated", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+testRunner.And("I Click on Certification Tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 43
+testRunner.When("I Update  Certification Seller is offering", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 44
+testRunner.Then("Check   Certification has been updated", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TC_4_Delete_005\tCheck if the seller is able to Delete Skills in his profile.")]
+        [NUnit.Framework.DescriptionAttribute("TC_4_Delete_005\tCheck if the seller is able to Delete Certification in his profil" +
+            "e.")]
         [NUnit.Framework.CategoryAttribute("tag1")]
-        public virtual void TC_4_Delete_005CheckIfTheSellerIsAbleToDeleteSkillsInHisProfile_()
+        public virtual void TC_4_Delete_005CheckIfTheSellerIsAbleToDeleteCertificationInHisProfile_()
         {
             string[] tagsOfScenario = new string[] {
                     "tag1"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC_4_Delete_005\tCheck if the seller is able to Delete Skills in his profile.", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC_4_Delete_005\tCheck if the seller is able to Delete Certification in his profil" +
+                    "e.", null, new string[] {
                         "tag1"});
-#line 49
+#line 51
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -253,17 +256,17 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 50
+#line 52
 testRunner.Given("I am on Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 51
-testRunner.And("I Click on Skills Tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 52
-testRunner.When("I Delete a skill", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
 #line 53
-testRunner.Then("Check Skill has been deleted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+testRunner.And("I Click on Certification Tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 54
+testRunner.When("I Delete a Certification", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 55
+testRunner.Then("Check Certification has been deleted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

@@ -1,5 +1,7 @@
 ﻿using MarsQA_1.Helpers;
 using MarsQA_1.Pages;
+using NUnit.Framework;
+using OpenQA.Selenium;
 using RelevantCodes.ExtentReports;
 using System;
 using System.Collections.Generic;
@@ -14,16 +16,33 @@ namespace MarsQA_1.Utils
     [Binding]
     public class Start : Driver
     {
+        [BeforeTestRun]
+        public static void BeforeTestRun()
+        {
+            ExtentReports();
+        }
+
+        [BeforeFeature]
+        public static void BeforeFeature(FeatureContext context)
+        {
+            test = Extent.StartTest(context.FeatureInfo.Title);
+        }
 
         [BeforeScenario]
         public void Setup()
         {
             //launch the browser
+            
             Initialize();
-            ExcelLibHelper.PopulateInCollection(@"MarsQA-1\SpecflowTests\Data\Mars.xlsx", "Credentials");
+            ExcelLibHelper.PopulateInCollection(@"C:\Users\Nancy\Desktop\New folder\MarsQA-1\SpecflowTests\Data\Mars.xlsx", "Credentials");
             //call the SignIn class
             SignIn.SigninStep();
         }
+
+
+
+
+
 
         [AfterScenario]
         public void TearDown()
